@@ -73,7 +73,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.ViewHolder> {
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            idImagemServicos = itemView.findViewById(R.id.idImagemServico);
+            idImagemServicos = itemView.findViewById(R.id.ImagemServico);
             idCardServicos = itemView.findViewById(R.id.idCardServico);
         }
     }

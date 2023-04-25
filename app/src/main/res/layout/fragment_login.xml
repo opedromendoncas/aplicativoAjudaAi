@@ -3,10 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:theme="@style/semBarra"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".CadastroFragment">
+    tools:context=".LoginFragment">
 
 
     <LinearLayout
@@ -24,27 +23,18 @@
             android:scaleType="fitCenter"
             android:src="@drawable/logo2" />
 
-
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="48dp"
-            android:background="?color"
-            android:hint="  Nome"
-            android:inputType="textEmailAddress"
-            android:maxLength="100" />
-
-        <EditText
-            android:layout_marginTop="20dp"
+            android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:background="?color"
             android:drawableRight="@drawable/baseline_email"
-            android:hint="  Email"
-            android:inputType="textPassword"
+            android:hint="  Email / Usuário"
+            android:inputType="textEmailAddress"
             android:maxLength="100" />
 
-
         <EditText
+            android:id="@+id/edtSenha"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="48dp"
@@ -55,12 +45,21 @@
             android:maxLength="100" />
 
         <Button
+            android:id="@+id/btnlogin"
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:text="CADASTRAR" />
+            android:text="Entrar" />
 
+        <TextView
+            android:id="@+id/txtRecuperaSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Esqueceu a senha?"
+            android:textStyle="bold" />
 
     </LinearLayout>
 

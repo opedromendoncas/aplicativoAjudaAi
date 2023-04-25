@@ -12,17 +12,20 @@
         android:theme="@style/Theme.AjudaAi"
         tools:targetApi="31">
         <activity
+            android:name=".TabActivity"
+            android:exported="false" />
+        <activity
             android:name=".ApresentaServicoActivity"
-            android:exported="false"
-            android:theme="@style/semBarra"/>
+            android:exported="true"
+            android:theme="@style/semBarra" />
         <activity
             android:name=".HomeMainActivity"
             android:exported="true"
-            android:theme="@style/semBarra"/>
+            android:theme="@style/semBarra" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/semBarra"/>
+            android:theme="@style/semBarra" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"

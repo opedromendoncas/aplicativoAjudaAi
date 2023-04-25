@@ -33,6 +33,18 @@ public class ServicosFragment extends Fragment {
                 new Servicos("Solicite a remoção de árvores caídas e poda de árvores.",
                         R.drawable.arvore));
 
+        ListaServicos.add(
+                new Servicos("Solicite o fechamento de buracos em vias públicas",
+                        R.drawable.buraco));
+
+        ListaServicos.add(
+                new Servicos("Solicite o reparo em postes de luz e semáforos",
+                        R.drawable.iluminacao));
+
+        ListaServicos.add(
+                new Servicos("Solicite a remoção de lixo e entulhos",
+                        R.drawable.lixo));
+
         MyAdapter adapter = new MyAdapter(getActivity().getApplicationContext(), ListaServicos);
 
         idRecyclerView.setLayoutManager(new
