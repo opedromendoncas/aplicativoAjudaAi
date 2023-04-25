@@ -28,7 +28,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:background="?color"
+            android:background="@drawable/linha"
             android:hint="  Nome"
             android:inputType="textEmailAddress"
             android:maxLength="100" />
@@ -37,7 +37,7 @@
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:background="?color"
+            android:background="@drawable/linha"
             android:drawableRight="@drawable/baseline_email"
             android:hint="  Email"
             android:inputType="textPassword"
@@ -48,7 +48,7 @@
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:background="?color"
+            android:background="@drawable/linha"
             android:drawableRight="@drawable/baseline_lock"
             android:hint="  Senha"
             android:inputType="textPassword"

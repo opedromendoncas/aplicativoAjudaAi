@@ -1,15 +1,14 @@
 package br.com.etecia.ajudaai;
 
-
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 public class MyViewPagerAdapter extends FragmentStateAdapter {
 
-
-    public MyViewPagerAdapter(@NonNull Fragment fragment) {
-        super(fragment);
+    public MyViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
+        super(fragmentActivity);
     }
 
     @NonNull
@@ -23,6 +22,7 @@ public class MyViewPagerAdapter extends FragmentStateAdapter {
             default:
                 return new LoginFragment();
         }
+
     }
 
     @Override

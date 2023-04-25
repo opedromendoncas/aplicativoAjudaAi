@@ -2,24 +2,30 @@ package br.com.etecia.ajudaai;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
+import android.view.View;
 
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
 
 public class TabActivity extends AppCompatActivity {
+
     TabLayout tabLayout;
+
     ViewPager2 viewPager2;
+
     MyViewPagerAdapter myViewPagerAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_tab);
 
         tabLayout = findViewById(R.id.tabLayout);
         viewPager2 = findViewById(R.id.viewPager);
+
         myViewPagerAdapter = new MyViewPagerAdapter(this);
+
         viewPager2.setAdapter(myViewPagerAdapter);
 
         tabLayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
@@ -38,7 +44,6 @@ public class TabActivity extends AppCompatActivity {
 
             }
         });
-
         viewPager2.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageSelected(int position) {
