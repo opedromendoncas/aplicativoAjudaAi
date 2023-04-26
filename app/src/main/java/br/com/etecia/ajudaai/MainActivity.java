@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.idContainerNav, new ConfigFragment()).commit();
+                break;
             case R.id.mSobre:
                 getSupportFragmentManager()
                         .beginTransaction()

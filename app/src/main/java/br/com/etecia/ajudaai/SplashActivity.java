@@ -18,7 +18,7 @@ public class SplashActivity extends AppCompatActivity {
             public void run() {
 
                 startActivity(new Intent(getApplicationContext(),
-                        TabActivity.class));
+                        MainActivity.class));
             }
         }, 1500);
     }
