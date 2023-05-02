@@ -9,7 +9,7 @@
                 <item
                     android:id="@+id/msolicitacoes"
                     android:checked="true"
-                    android:icon="@drawable/baseline_assignment_late"
+                    android:icon="@drawable/baseline_assignment"
                     android:title="Solicitações" />
 
                 <item
